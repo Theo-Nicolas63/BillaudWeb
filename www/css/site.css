@@ -1,5 +1,15 @@
+@font-face {
+    font-family: Pavia;
+    src: url(../fonts/Pavia.ttf);
+  }
+
+  @font-face {
+    font-family: Anton;
+    src: url(../fonts/Anton.ttf);
+  }  
+
 body {
-    background-color: black !important;
+    background-color: white !important;
 }
 
 #icon {
@@ -7,7 +17,24 @@ body {
     height: 3rem;
 }
 
-h1{
-    display: inline;
+h1, h2{
     vertical-align: middle;
+    font-family: Pavia;
 }
+
+.inline {
+    display: inline;
+}
+
+.transitionCss {
+    opacity: 0;
+    transition: transform 0.8s ease-in-out,
+    opacity 0.8s ease-in-out;
+}
+.transitionCss.active {
+    opacity: 1;
+}
+
+
+
+  
