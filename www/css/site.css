@@ -8,8 +8,16 @@
     src: url(../fonts/Anton.ttf);
   }  
 
-body {
-    background-color: white !important;
+.main-wrapper {
+    height: 100vh;
+}
+
+.section.active {
+    height: 100%;
+    width: 100%;
+    background-image: url(../../media/semi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #icon {
@@ -35,6 +43,25 @@ h1, h2{
     opacity: 1;
 }
 
+.hid-section {
+    top: 100%;
+    position: relative;
+    transition: all .3s ease-out;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../media/semi2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.hid-section.active {
+    top: 0;
+}
+
+.section {
+    top: -100%;
+    position: relative;
+    transition: all .3s ease-out;
+}
 
   
